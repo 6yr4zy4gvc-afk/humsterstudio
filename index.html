@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HumsterStudio — сайты и программы для ПК</title>
+  <meta name="description" content="HumsterStudio — команда разработчиков: сайты, веб-приложения и программы для ПК. Оценка сроков до старта, сдача в срок, поддержка после сдачи." />
+  <meta name="theme-color" content="#0d0e10" />
+  <meta property="og:title" content="HumsterStudio — сайты и программы для ПК" />
+  <meta property="og:description" content="Команда разработчиков: сайты и программы для ПК. Делаем в сроки." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ================= ФОН: фото-прожектор + анимированные слои ================= -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__parallax" data-bg-parallax>
+      <div class="bg__main"></div>
+    </div>
+    <div class="bg__particles" data-particles></div>
+    <div class="bg__flash" data-bg-flash></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <!-- шум/текстура поверх фона -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- индикатор прокрутки -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <!-- кастомный курсор: круг + точки в центре -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__ring"></span>
+    <span class="cursor__sat"></span>
+    <span class="cursor__sat"></span>
+    <span class="cursor__sat"></span>
+    <span class="cursor__sat"></span>
+    <span class="cursor__sat"></span>
+    <span class="cursor__dot"></span>
+    <span class="cursor__label"></span>
+  </div>
+
+  <a class="skip-link" href="#works">Перейти к работам</a>
+
+  <header class="header" id="top">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" data-magnetic aria-label="HumsterStudio — в начало сайта">
+        <img class="brand__mark" src="assets/logo-mark.png" alt="" width="26" height="26" />
+        <span class="brand__name"><span data-fill="name">HumsterStudio</span><i>.</i></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#about">Команда</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact" class="nav__mobile-cta">Связаться</a>
+      </nav>
+
+      <a class="btn btn--ghost header__cta" href="#contact" data-magnetic>Обсудить проект</a>
+
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" data-parallax="0.10" aria-hidden="true"></div>
+      <div class="hero__glow" data-parallax="0.22" aria-hidden="true"></div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__left">
+          <p class="eyebrow reveal">
+            <span class="pulse" aria-hidden="true"></span>
+            <span data-fill="status">Берём новые проекты</span>
+          </p>
+
+          <h1 class="hero__title" data-stagger>
+            <span class="line"><span class="reveal reveal--up"><span data-stretch>Команда.</span></span></span>
+            <span class="line"><span class="reveal reveal--up"><span data-stretch>Сайты и программы</span></span></span>
+            <span class="line line--dim"><span class="reveal reveal--up"><span data-stretch>для ПК — в срок.</span></span></span>
+          </h1>
+
+          <p class="hero__lead reveal">
+            <b data-fill="name">HumsterStudio</b> — команда разработчиков. Делаем сайты и программы
+            для ПК под задачу: от лендинга до утилиты для Windows. Оценку сроков даём до старта — и держим её.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn" href="#works" data-magnetic>Смотреть работы</a>
+            <a class="btn btn--ghost" href="#contact" data-magnetic>Написать нам</a>
+          </div>
+
+          <ul class="facts" data-stagger>
+            <li class="reveal"><b>01</b> Оценка сроков — до начала работы</li>
+            <li class="reveal"><b>02</b> Сдача — день в день, без «почти готово»</li>
+            <li class="reveal"><b>03</b> Поддержка и правки после сдачи</li>
+          </ul>
+        </div>
+
+        <aside class="hero__card reveal" aria-label="Консоль">
+          <div class="console" data-stretch-soft>
+            <div class="console__bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <em>~/dev</em>
+            </div>
+            <pre class="console__body"><code data-typewriter></code><span class="caret" aria-hidden="true"></span></pre>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= БЕГУЩАЯ СТРОКА ================= -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee-track>
+        <span class="marquee__group">
+          <span>Сайты</span><i>•</i><span>Лендинги</span><i>•</i><span>Интернет-магазины</span><i>•</i>
+          <span>Веб-приложения</span><i>•</i><span>Программы для ПК</span><i>•</i>
+          <span>Автоматизация</span><i>•</i><span>Доработка и поддержка</span><i>•</i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ================= УСЛУГИ ================= -->
+    <section class="section" id="services" data-slide>
+      <div class="wrap">
+        <header class="section__head" data-stagger>
+          <span class="section__index">01<i class="section__index-bar" aria-hidden="true"></i></span>
+          <h2 class="section__title"><span class="mask"><span class="reveal reveal--up"><span data-stretch>Услуги</span></span></span></h2>
+          <p class="section__note reveal">Берём задачу целиком: от структуры и вёрстки до логики и сборки.</p>
+        </header>
+        <div class="cards" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= РАБОТЫ ================= -->
+    <section class="section section--alt" id="works" data-slide>
+      <div class="wrap">
+        <header class="section__head" data-stagger>
+          <span class="section__index">02<i class="section__index-bar" aria-hidden="true"></i></span>
+          <h2 class="section__title"><span class="mask"><span class="reveal reveal--up"><span data-stretch>Работы</span></span></span></h2>
+          <p class="section__note reveal">
+            Портфолио собираем: первые проекты со ссылками появятся здесь в ближайшее время.
+          </p>
+        </header>
+
+        <div class="works" id="works-grid" data-stagger></div>
+
+        <noscript>
+          <p class="works__noscript">Работы появятся здесь в ближайшее время.</p>
+        </noscript>
+
+        <p class="works__hint reveal">
+          <span class="badge badge--soft">скоро</span>
+          Показываем работы по запросу — напиши, и пришлём примеры под твою задачу.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= КОМАНДА ================= -->
+    <section class="section" id="about" data-slide>
+      <div class="wrap about">
+        <header class="section__head about__head" data-stagger>
+          <span class="section__index">03<i class="section__index-bar" aria-hidden="true"></i></span>
+          <h2 class="section__title"><span class="mask"><span class="reveal reveal--up"><span data-stretch>О команде</span></span></span></h2>
+          <img class="about__emblem reveal reveal--right" src="assets/logo-emblem.webp"
+               alt="Логотип HumsterStudio: круг с рабочим местом разработчика" width="200" height="200" />
+        </header>
+
+        <div class="about__body">
+          <div class="about__text" data-stagger>
+            <p class="reveal reveal--left">
+              HumsterStudio — небольшая команда разработчиков. Делаем сайты и программы для ПК:
+              от простых лендингов до приложений с базой данных и автоматизацией рутины. Любим задачи,
+              где нужно не «нарисовать красиво», а сделать так, чтобы всё работало и не падало.
+            </p>
+            <p class="reveal reveal--left">
+              Работаем прозрачно: сначала разбираем задачу и называем срок, потом показываем промежуточный
+              результат, в конце отдаём готовый проект с инструкцией. Если что-то пошло не так —
+              говорим об этом сразу, а не в день сдачи.
+            </p>
+
+            <ul class="principles" data-stagger>
+              <li class="reveal"><b>Сроки</b><span>Оценка до старта и соблюдение дедлайна.</span></li>
+              <li class="reveal"><b>Понятный код</b><span>Комментарии и структура, чтобы можно было развивать.</span></li>
+              <li class="reveal"><b>Связь</b><span>Отвечаем по делу, без «пропали на неделю».</span></li>
+              <li class="reveal"><b>После сдачи</b><span>Остаёмся на связи: доработки и поддержка.</span></li>
+            </ul>
+          </div>
+
+          <aside class="about__side reveal reveal--right" data-stretch-soft>
+            <h3 class="side__title">Кто в команде</h3>
+            <ul class="roles" id="roles-list" data-stagger></ul>
+
+            <h3 class="side__title side__title--gap">Стек и инструменты</h3>
+            <div class="chips" id="skills-list"></div>
+
+            <div class="availability">
+              <span class="pulse" aria-hidden="true"></span>
+              <div>
+                <b>Открыты к заказам</b>
+                <span data-fill="availability">Отвечаем в течение дня</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЦЕСС ================= -->
+    <section class="section section--alt" id="process" data-slide>
+      <div class="wrap">
+        <header class="section__head" data-stagger>
+          <span class="section__index">04<i class="section__index-bar" aria-hidden="true"></i></span>
+          <h2 class="section__title"><span class="mask"><span class="reveal reveal--up"><span data-stretch>Как мы работаем</span></span></span></h2>
+          <p class="section__note reveal">Четыре шага, на каждом — понятный результат.</p>
+        </header>
+        <ol class="steps" id="steps-list" data-stagger></ol>
+      </div>
+    </section>
+
+    <!-- ================= КОНТАКТЫ ================= -->
+    <section class="section contact" id="contact" data-slide>
+      <div class="wrap">
+        <header class="section__head" data-stagger>
+          <span class="section__index">05<i class="section__index-bar" aria-hidden="true"></i></span>
+          <h2 class="section__title section__title--big"><span class="mask"><span class="reveal reveal--up"><span data-stretch>Расскажи о задаче</span></span></span></h2>
+          <p class="section__note reveal">
+            Опиши, что нужно сделать — ответим со сроком, этапами и стоимостью.
+          </p>
+        </header>
+
+        <div class="contact__grid" data-stagger>
+          <a class="contact__card reveal" id="contact-mail" href="mailto:humsterstudio@bk.ru" data-magnetic>
+            <span class="contact__label">E-mail</span>
+            <span class="contact__value" data-fill="email">humsterstudio@bk.ru</span>
+            <span class="contact__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact__card reveal" id="contact-tg" href="https://t.me/HumsterStudio" data-magnetic>
+            <span class="contact__label">Telegram</span>
+            <span class="contact__value" data-fill="telegram">@HumsterStudio</span>
+            <span class="contact__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact__card reveal" id="contact-gh" href="https://github.com/pheIsn" data-magnetic>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value" data-fill="github">github.com/pheIsn</span>
+            <span class="contact__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <button class="btn btn--ghost copy" type="button" id="copy-mail" data-magnetic>
+          Скопировать e-mail
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__brand">
+        <img class="footer__mark" src="assets/logo-hs.webp" alt="" width="30" height="23" />
+        <span>© <span data-fill="year">2025</span> <span data-fill="name">HumsterStudio</span>. Собрано вручную, без конструкторов.</span>
+      </span>
+      <a href="#top" data-magnetic>Наверх ↑</a>
+    </div>
+  </footer>
+
+  <button class="fx-toggle" id="fx-toggle" type="button" aria-pressed="true" title="Курсор, стретч и плавный скролл">
+    <span class="fx-toggle__dot" aria-hidden="true"></span>
+    <span class="fx-toggle__text">эффекты: вкл</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
